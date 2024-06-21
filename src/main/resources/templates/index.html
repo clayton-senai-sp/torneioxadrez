@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Torneio de Xadrez</title>
 </head>
 <body>
+<h1>Torneio de Xadrez</h1>
+<h2>Campeonatos</h2>
 
+<tr th:each="campeonato : ${campeonatos}">
+
+
+        <h4 th:text="${campeonato.nome}"/>
+
+
+</tr>
 </body>
 </html>
